@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Doom_EpisodeMenuViewController">
+            <connections>
+                <outlet property="epi1Button" destination="49" id="60"/>
+                <outlet property="epi2Button" destination="48" id="61"/>
+                <outlet property="epi3Button" destination="47" id="62"/>
+                <outlet property="epi4Button" destination="46" id="63"/>
+                <outlet property="nextButton" destination="33" id="64"/>
+                <outlet property="nextLabel" destination="35" id="65"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="MenuBackground.png" id="32" userLabel="Background">
+                    <rect key="frame" x="42" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="33" customClass="idLabelButton">
+                    <rect key="frame" x="467" y="264" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="NextButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NextToMissions" destination="-1" eventType="touchUpInside" id="68"/>
+                        <outlet property="label" destination="35" id="59"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34" customClass="idLabelButton">
+                    <rect key="frame" x="42" y="264" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="BackButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="Episode1Background.png"/>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BackToMain" destination="-1" eventType="touchUpInside" id="67"/>
+                        <outlet property="label" destination="36" id="58"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Next" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="35" customClass="idLabel">
+                    <rect key="frame" x="477" y="259" width="29" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Back" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="36" customClass="idLabel">
+                    <rect key="frame" x="51" y="259" width="32" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="0.7254902124" green="0.42352941630000002" blue="0.066666670139999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="37">
+                    <rect key="frame" x="110" y="8" width="344" height="304"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="49" customClass="idLabelButton">
+                            <rect key="frame" x="11" y="3" width="320" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode1Background.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Episode1Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode1Background_Highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SelectEpisode1" destination="-1" eventType="touchUpInside" id="69"/>
+                                <outlet property="label" destination="38" id="50"/>
+                                <outlet property="label2" destination="39" id="51"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="48" customClass="idLabelButton">
+                            <rect key="frame" x="11" y="75" width="320" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode2Background.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Episode2Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode2Background_Highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SelectEpisode2" destination="-1" eventType="touchUpInside" id="70"/>
+                                <outlet property="label" destination="40" id="52"/>
+                                <outlet property="label2" destination="41" id="53"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="47" customClass="idLabelButton">
+                            <rect key="frame" x="11" y="146" width="320" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode3Background.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Episode3Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode3Background_Highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SelectEpisode3" destination="-1" eventType="touchUpInside" id="71"/>
+                                <outlet property="label" destination="42" id="54"/>
+                                <outlet property="label2" destination="43" id="55"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="46" customClass="idLabelButton">
+                            <rect key="frame" x="11" y="219" width="320" height="79"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="Episode4Background.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="Episode4Background_Highlighted.png"/>
+                            <state key="highlighted" image="Episode4Background_Highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="SelectEpisode4" destination="-1" eventType="touchUpInside" id="72"/>
+                                <outlet property="label" destination="45" id="56"/>
+                                <outlet property="label2" destination="44" id="57"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_IV" lineBreakMode="tailTruncation" minimumFontSize="10" id="45" customClass="idLabel">
+                            <rect key="frame" x="37" y="245" width="81" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thy Flesh Consumed" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" customClass="idLabel">
+                            <rect key="frame" x="37" y="260" width="192" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Inferno" lineBreakMode="tailTruncation" minimumFontSize="10" id="43" customClass="idLabel">
+                            <rect key="frame" x="37" y="188" width="63" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_III" lineBreakMode="tailTruncation" minimumFontSize="10" id="42" customClass="idLabel">
+                            <rect key="frame" x="37" y="173" width="79" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The Shores of Hell" lineBreakMode="tailTruncation" minimumFontSize="10" id="41" customClass="idLabel">
+                            <rect key="frame" x="37" y="117" width="169" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_II" lineBreakMode="tailTruncation" minimumFontSize="10" id="40" customClass="idLabel">
+                            <rect key="frame" x="37" y="102" width="75" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Knee-Deep in the Dead" lineBreakMode="tailTruncation" minimumFontSize="10" id="39" customClass="idLabel">
+                            <rect key="frame" x="37" y="44" width="212" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.85882353779999998" green="0.34117648010000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="1" green="0.80000001190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#EPISODE_I" lineBreakMode="tailTruncation" minimumFontSize="10" id="38" customClass="idLabel">
+                            <rect key="frame" x="37" y="29" width="71" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                            <color key="textColor" red="0.49411764740000003" green="0.1921568662" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.87058824300000004" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackButton.png" width="93" height="94"/>
+        <image name="Episode1Background.png" width="601" height="150"/>
+        <image name="Episode1Background_Highlighted.png" width="601" height="150"/>
+        <image name="Episode2Background.png" width="601" height="150"/>
+        <image name="Episode2Background_Highlighted.png" width="601" height="150"/>
+        <image name="Episode3Background.png" width="601" height="150"/>
+        <image name="Episode3Background_Highlighted.png" width="601" height="150"/>
+        <image name="Episode4Background.png" width="601" height="150"/>
+        <image name="Episode4Background_Highlighted.png" width="601" height="150"/>
+        <image name="MenuBackground.png" width="960" height="640"/>
+        <image name="NextButton.png" width="93" height="94"/>
+    </resources>
+</document>

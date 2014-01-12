@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D155FF014B51175000D33AA /* dict-list.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FD814B51175000D33AA /* dict-list.h */; };
+		3D155FF114B51175000D33AA /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FD914B51175000D33AA /* dict.c */; };
+		3D155FF214B51175000D33AA /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDA14B51175000D33AA /* dict.h */; };
+		3D155FF314B51175000D33AA /* geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDB14B51175000D33AA /* geom.c */; };
+		3D155FF414B51175000D33AA /* geom.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDC14B51175000D33AA /* geom.h */; };
+		3D155FF514B51175000D33AA /* memalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDD14B51175000D33AA /* memalloc.c */; };
+		3D155FF614B51175000D33AA /* memalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDE14B51175000D33AA /* memalloc.h */; };
+		3D155FF714B51175000D33AA /* mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDF14B51175000D33AA /* mesh.c */; };
+		3D155FF814B51175000D33AA /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE014B51175000D33AA /* mesh.h */; };
+		3D155FF914B51175000D33AA /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE114B51175000D33AA /* normal.c */; };
+		3D155FFA14B51175000D33AA /* normal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE214B51175000D33AA /* normal.h */; };
+		3D155FFB14B51175000D33AA /* priorityq-heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE314B51175000D33AA /* priorityq-heap.c */; };
+		3D155FFC14B51175000D33AA /* priorityq-heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE414B51175000D33AA /* priorityq-heap.h */; };
+		3D155FFD14B51175000D33AA /* priorityq-sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE514B51175000D33AA /* priorityq-sort.h */; };
+		3D155FFE14B51175000D33AA /* priorityq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE614B51175000D33AA /* priorityq.c */; };
+		3D155FFF14B51175000D33AA /* priorityq.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE714B51175000D33AA /* priorityq.h */; };
+		3D15600014B51175000D33AA /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE814B51175000D33AA /* render.c */; };
+		3D15600114B51175000D33AA /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE914B51175000D33AA /* render.h */; };
+		3D15600214B51175000D33AA /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEA14B51175000D33AA /* sweep.c */; };
+		3D15600314B51175000D33AA /* sweep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FEB14B51175000D33AA /* sweep.h */; };
+		3D15600414B51175000D33AA /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEC14B51175000D33AA /* tess.c */; };
+		3D15600514B51175000D33AA /* tess.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FED14B51175000D33AA /* tess.h */; };
+		3D15600614B51175000D33AA /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEE14B51175000D33AA /* tessmono.c */; };
+		3D15600714B51175000D33AA /* tessmono.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FEF14B51175000D33AA /* tessmono.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D155FC114B51127000D33AA /* libtess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtess.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D155FD814B51175000D33AA /* dict-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dict-list.h"; path = "../../libtess/dict-list.h"; sourceTree = "<group>"; };
+		3D155FD914B51175000D33AA /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dict.c; path = ../../libtess/dict.c; sourceTree = "<group>"; };
+		3D155FDA14B51175000D33AA /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dict.h; path = ../../libtess/dict.h; sourceTree = "<group>"; };
+		3D155FDB14B51175000D33AA /* geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = geom.c; path = ../../libtess/geom.c; sourceTree = "<group>"; };
+		3D155FDC14B51175000D33AA /* geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geom.h; path = ../../libtess/geom.h; sourceTree = "<group>"; };
+		3D155FDD14B51175000D33AA /* memalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = memalloc.c; path = ../../libtess/memalloc.c; sourceTree = "<group>"; };
+		3D155FDE14B51175000D33AA /* memalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memalloc.h; path = ../../libtess/memalloc.h; sourceTree = "<group>"; };
+		3D155FDF14B51175000D33AA /* mesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mesh.c; path = ../../libtess/mesh.c; sourceTree = "<group>"; };
+		3D155FE014B51175000D33AA /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../../libtess/mesh.h; sourceTree = "<group>"; };
+		3D155FE114B51175000D33AA /* normal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = normal.c; path = ../../libtess/normal.c; sourceTree = "<group>"; };
+		3D155FE214B51175000D33AA /* normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = normal.h; path = ../../libtess/normal.h; sourceTree = "<group>"; };
+		3D155FE314B51175000D33AA /* priorityq-heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "priorityq-heap.c"; path = "../../libtess/priorityq-heap.c"; sourceTree = "<group>"; };
+		3D155FE414B51175000D33AA /* priorityq-heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "priorityq-heap.h"; path = "../../libtess/priorityq-heap.h"; sourceTree = "<group>"; };
+		3D155FE514B51175000D33AA /* priorityq-sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "priorityq-sort.h"; path = "../../libtess/priorityq-sort.h"; sourceTree = "<group>"; };
+		3D155FE614B51175000D33AA /* priorityq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = priorityq.c; path = ../../libtess/priorityq.c; sourceTree = "<group>"; };
+		3D155FE714B51175000D33AA /* priorityq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = priorityq.h; path = ../../libtess/priorityq.h; sourceTree = "<group>"; };
+		3D155FE814B51175000D33AA /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = render.c; path = ../../libtess/render.c; sourceTree = "<group>"; };
+		3D155FE914B51175000D33AA /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render.h; path = ../../libtess/render.h; sourceTree = "<group>"; };
+		3D155FEA14B51175000D33AA /* sweep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sweep.c; path = ../../libtess/sweep.c; sourceTree = "<group>"; };
+		3D155FEB14B51175000D33AA /* sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sweep.h; path = ../../libtess/sweep.h; sourceTree = "<group>"; };
+		3D155FEC14B51175000D33AA /* tess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tess.c; path = ../../libtess/tess.c; sourceTree = "<group>"; };
+		3D155FED14B51175000D33AA /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tess.h; path = ../../libtess/tess.h; sourceTree = "<group>"; };
+		3D155FEE14B51175000D33AA /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tessmono.c; path = ../../libtess/tessmono.c; sourceTree = "<group>"; };
+		3D155FEF14B51175000D33AA /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tessmono.h; path = ../../libtess/tessmono.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D155FBE14B51127000D33AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D155FB614B51127000D33AA = {
+			isa = PBXGroup;
+			children = (
+				3D155FD714B51142000D33AA /* libtess */,
+				3D155FC214B51127000D33AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D155FC214B51127000D33AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D155FC114B51127000D33AA /* libtess.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D155FD714B51142000D33AA /* libtess */ = {
+			isa = PBXGroup;
+			children = (
+				3D155FD814B51175000D33AA /* dict-list.h */,
+				3D155FD914B51175000D33AA /* dict.c */,
+				3D155FDA14B51175000D33AA /* dict.h */,
+				3D155FDB14B51175000D33AA /* geom.c */,
+				3D155FDC14B51175000D33AA /* geom.h */,
+				3D155FDD14B51175000D33AA /* memalloc.c */,
+				3D155FDE14B51175000D33AA /* memalloc.h */,
+				3D155FDF14B51175000D33AA /* mesh.c */,
+				3D155FE014B51175000D33AA /* mesh.h */,
+				3D155FE114B51175000D33AA /* normal.c */,
+				3D155FE214B51175000D33AA /* normal.h */,
+				3D155FE314B51175000D33AA /* priorityq-heap.c */,
+				3D155FE414B51175000D33AA /* priorityq-heap.h */,
+				3D155FE514B51175000D33AA /* priorityq-sort.h */,
+				3D155FE614B51175000D33AA /* priorityq.c */,
+				3D155FE714B51175000D33AA /* priorityq.h */,
+				3D155FE814B51175000D33AA /* render.c */,
+				3D155FE914B51175000D33AA /* render.h */,
+				3D155FEA14B51175000D33AA /* sweep.c */,
+				3D155FEB14B51175000D33AA /* sweep.h */,
+				3D155FEC14B51175000D33AA /* tess.c */,
+				3D155FED14B51175000D33AA /* tess.h */,
+				3D155FEE14B51175000D33AA /* tessmono.c */,
+				3D155FEF14B51175000D33AA /* tessmono.h */,
+			);
+			name = libtess;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D155FBF14B51127000D33AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D155FF014B51175000D33AA /* dict-list.h in Headers */,
+				3D155FF214B51175000D33AA /* dict.h in Headers */,
+				3D155FF414B51175000D33AA /* geom.h in Headers */,
+				3D155FF614B51175000D33AA /* memalloc.h in Headers */,
+				3D155FF814B51175000D33AA /* mesh.h in Headers */,
+				3D155FFA14B51175000D33AA /* normal.h in Headers */,
+				3D155FFC14B51175000D33AA /* priorityq-heap.h in Headers */,
+				3D155FFD14B51175000D33AA /* priorityq-sort.h in Headers */,
+				3D155FFF14B51175000D33AA /* priorityq.h in Headers */,
+				3D15600114B51175000D33AA /* render.h in Headers */,
+				3D15600314B51175000D33AA /* sweep.h in Headers */,
+				3D15600514B51175000D33AA /* tess.h in Headers */,
+				3D15600714B51175000D33AA /* tessmono.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D155FC014B51127000D33AA /* tess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D155FCE14B51127000D33AA /* Build configuration list for PBXNativeTarget "tess" */;
+			buildPhases = (
+				3D155FBD14B51127000D33AA /* Sources */,
+				3D155FBE14B51127000D33AA /* Frameworks */,
+				3D155FBF14B51127000D33AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tess;
+			productName = tess;
+			productReference = 3D155FC114B51127000D33AA /* libtess.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D155FB814B51127000D33AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 3D155FBB14B51127000D33AA /* Build configuration list for PBXProject "tess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D155FB614B51127000D33AA;
+			productRefGroup = 3D155FC214B51127000D33AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D155FC014B51127000D33AA /* tess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D155FBD14B51127000D33AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D155FF114B51175000D33AA /* dict.c in Sources */,
+				3D155FF314B51175000D33AA /* geom.c in Sources */,
+				3D155FF514B51175000D33AA /* memalloc.c in Sources */,
+				3D155FF714B51175000D33AA /* mesh.c in Sources */,
+				3D155FF914B51175000D33AA /* normal.c in Sources */,
+				3D155FFB14B51175000D33AA /* priorityq-heap.c in Sources */,
+				3D155FFE14B51175000D33AA /* priorityq.c in Sources */,
+				3D15600014B51175000D33AA /* render.c in Sources */,
+				3D15600214B51175000D33AA /* sweep.c in Sources */,
+				3D15600414B51175000D33AA /* tess.c in Sources */,
+				3D15600614B51175000D33AA /* tessmono.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D155FCC14B51127000D33AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D155FCD14B51127000D33AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D155FCF14B51127000D33AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tess.dst;
+				GCC_VERSION = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3D155FD014B51127000D33AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tess.dst;
+				GCC_VERSION = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D155FBB14B51127000D33AA /* Build configuration list for PBXProject "tess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D155FCC14B51127000D33AA /* Debug */,
+				3D155FCD14B51127000D33AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D155FCE14B51127000D33AA /* Build configuration list for PBXNativeTarget "tess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D155FCF14B51127000D33AA /* Debug */,
+				3D155FD014B51127000D33AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D155FB814B51127000D33AA /* Project object */;
+}

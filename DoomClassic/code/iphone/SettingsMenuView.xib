@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Doom_SettingsMenuViewController">
+            <connections>
+                <outlet property="autoUseSwitch" destination="21" id="25"/>
+                <outlet property="centerSticksSwitch" destination="23" id="26"/>
+                <outlet property="drawControlsSwitch" destination="6" id="27"/>
+                <outlet property="musicSwitch" destination="18" id="28"/>
+                <outlet property="rampTurnSwitch" destination="17" id="29"/>
+                <outlet property="statusbarSwitch" destination="7" id="30"/>
+                <outlet property="textMessageSwitch" destination="16" id="31"/>
+                <outlet property="touchclickSwitch" destination="14" id="32"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="MenuBackground.png" id="10" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8" customClass="idLabelButton">
+                    <rect key="frame" x="0.0" y="264" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="BackButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BackToMain" destination="-1" eventType="touchUpInside" id="36"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9" customClass="idLabelButton">
+                    <rect key="frame" x="425" y="264" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <size key="titleShadowOffset" width="1" height="2"/>
+                    <state key="normal" image="NextButton.png">
+                        <color key="titleColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="0.011764707040000001" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ResetToDefaults" destination="-1" eventType="touchUpInside" id="41"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Back" lineBreakMode="tailTruncation" minimumFontSize="10" id="4" customClass="idLabel">
+                    <rect key="frame" x="9" y="259" width="33" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Text_Messages:" lineBreakMode="tailTruncation" minimumFontSize="10" id="5" customClass="idLabel">
+                    <rect key="frame" x="40" y="191" width="123" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Status_Bar:" lineBreakMode="tailTruncation" minimumFontSize="10" id="11" customClass="idLabel">
+                    <rect key="frame" x="76" y="86" width="87" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Draw_Controls:" lineBreakMode="tailTruncation" minimumFontSize="10" id="12" customClass="idLabel">
+                    <rect key="frame" x="236" y="40" width="117" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Auto_Use:" lineBreakMode="tailTruncation" minimumFontSize="10" id="13" customClass="idLabel">
+                    <rect key="frame" x="88" y="41" width="75" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Reset" lineBreakMode="tailTruncation" minimumFontSize="10" id="15" customClass="idLabel">
+                    <rect key="frame" x="431" y="259" width="38" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Center_Sticks:" lineBreakMode="tailTruncation" minimumFontSize="10" id="19" customClass="idLabel">
+                    <rect key="frame" x="245" y="136" width="108" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Ramp_Turn:" lineBreakMode="tailTruncation" minimumFontSize="10" id="20" customClass="idLabel">
+                    <rect key="frame" x="260" y="191" width="93" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Hud_Audio:" lineBreakMode="tailTruncation" minimumFontSize="10" id="22" customClass="idLabel">
+                    <rect key="frame" x="73" y="136" width="90" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#Music:" lineBreakMode="tailTruncation" minimumFontSize="10" id="24" customClass="idLabel">
+                    <rect key="frame" x="301" y="86" width="52" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.66274511810000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.03260869533" green="0.03260869533" blue="0.03260869533" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="1" height="2"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6" customClass="idSwitch">
+                    <rect key="frame" x="361" y="33" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="DrawControlsChanged" destination="-1" eventType="valueChanged" id="38"/>
+                        <action selector="DrawControlsChanged" destination="-1" eventType="touchUpInside" id="FA6-Ca-7dP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7" customClass="idSwitch">
+                    <rect key="frame" x="171" y="77" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="StatusBarChanged" destination="-1" eventType="valueChanged" id="42"/>
+                        <action selector="StatusBarChanged" destination="-1" eventType="touchUpInside" id="FEZ-Os-ahl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14" customClass="idSwitch">
+                    <rect key="frame" x="171" y="129" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchClickChanged" destination="-1" eventType="valueChanged" id="44"/>
+                        <action selector="TouchClickChanged" destination="-1" eventType="touchUpInside" id="pbe-GW-zNG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="16" customClass="idSwitch">
+                    <rect key="frame" x="171" y="184" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="TextMessagesChanged" destination="-1" eventType="valueChanged" id="43"/>
+                        <action selector="TextMessagesChanged" destination="-1" eventType="touchUpInside" id="DKj-mb-Z5D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17" customClass="idSwitch">
+                    <rect key="frame" x="361" y="184" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="RampTurnChanged" destination="-1" eventType="valueChanged" id="40"/>
+                        <action selector="RampTurnChanged" destination="-1" eventType="touchUpInside" id="Wk2-SU-34U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="18" customClass="idSwitch">
+                    <rect key="frame" x="361" y="77" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="MusicChanged" destination="-1" eventType="valueChanged" id="39"/>
+                        <action selector="MusicChanged" destination="-1" eventType="touchUpInside" id="6zK-2b-u1B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21" customClass="idSwitch">
+                    <rect key="frame" x="171" y="32" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="AutoUseChanged" destination="-1" eventType="valueChanged" id="34"/>
+                        <action selector="AutoUseChanged" destination="-1" eventType="touchUpInside" id="SdX-6T-vj2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="23" customClass="idSwitch">
+                    <rect key="frame" x="361" y="129" width="36" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="SettingsButton.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="SettingsButton_Highlighted.png"/>
+                    <state key="highlighted" image="SettingsButton_Highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CenterSticksChanged" destination="-1" eventType="valueChanged" id="37"/>
+                        <action selector="CenterSticksChanged" destination="-1" eventType="touchUpInside" id="Kq6-xy-VK4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackButton.png" width="93" height="94"/>
+        <image name="MenuBackground.png" width="960" height="640"/>
+        <image name="NextButton.png" width="93" height="94"/>
+        <image name="SettingsButton.png" width="80" height="89"/>
+        <image name="SettingsButton_Highlighted.png" width="80" height="89"/>
+    </resources>
+</document>
