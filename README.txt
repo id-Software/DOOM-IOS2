@@ -10,7 +10,7 @@ GENERAL NOTES
 =============
 
 DOOM Classic iOS v3.0 is a free release, and can be downloaded from
-http://http://www.idsoftware.com/idstuff/doom/doomclassic_ios_v30_src.zip
+http://download.zenimax.com/idsoftware/src/doomclassic_ios_v30_src.zip
 
 This source release does not contain any game data, the game data remains subject to the original EULA and applicable law.
 

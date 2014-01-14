@@ -58,11 +58,10 @@ static const char * MasterLevels_WADS[] = {
     "VESPERAS.WAD", 
     "BLACKTWR.WAD" ,
     "TEETH.WAD",   
-    "TEETH.WAD",
+    "TEETH.WAD"
 };
 
 void iphoneFindIWADFile( iphoneMissionPack_t mission, char * returnFileName ) {
-
 	switch ( mission ) {
 		case MISSION_HELL_ON_EARTH:
 			sprintf( returnFileName,  "doom2.wad" );
@@ -71,21 +70,21 @@ void iphoneFindIWADFile( iphoneMissionPack_t mission, char * returnFileName ) {
 		case MISSION_PLUTONIA:
 			sprintf( returnFileName,   "plutonia.wad" );
 			return;
-			
+		
 		case MISSION_TNT_EVILUTION:
 			sprintf( returnFileName,   "tnt.wad" );
 			return;
-			
+		
 		case MISSION_NO_REST_FOR_THE_LIVING:
 			sprintf( returnFileName,   "doom2.wad" );
 			return;
-            
+		
 		case MISSION_MASTER_LEVELS:
-            sprintf( returnFileName,   "doom2.wad" );
-            return;
-			
+			sprintf( returnFileName,   "doom2.wad" );
+			return;
+		
 		default:
-			sprintf( returnFileName, "doom2.wad" );;
+			sprintf( returnFileName,   "doom2.wad" );
 	}
 }
 
@@ -97,18 +96,17 @@ void iphoneFindIWADFile( iphoneMissionPack_t mission, char * returnFileName ) {
  ==================
  */
 void iphoneFindPWADFile( iphoneMissionPack_t mission, char * returnFileName ) {
-
 	switch ( mission ) {
 		case MISSION_NO_REST_FOR_THE_LIVING: {
 			sprintf( returnFileName, "nerve.wad" );
-            return;
-			break;
+			return;
 		}
+		
 		case MISSION_MASTER_LEVELS: {
-            sprintf( returnFileName, "%s", MasterLevels_WADS[ iphoneMasterLevel ] );
-            return;
-			break;
-        }
+			sprintf( returnFileName, "%s", MasterLevels_WADS[ iphoneMasterLevel ] );
+			return;
+		}
+		
 		default:
 			break;
 	}
