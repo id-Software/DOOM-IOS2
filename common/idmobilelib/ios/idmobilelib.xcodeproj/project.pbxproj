@@ -320,8 +320,13 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++0x\n",
+					"-stdlib=libc++\n",
+				);
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = ../;
 				WARNING_CFLAGS = (
@@ -369,7 +374,12 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++0x\n",
+					"-stdlib=libc++\n",
+				);
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = ../;
 				VALIDATE_PRODUCT = YES;
@@ -386,6 +396,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/idmobilelib.dst;
 				GCC_VERSION = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -398,6 +409,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/idmobilelib.dst;
 				GCC_VERSION = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -301,21 +301,20 @@ namespace idInAppStore {
 	purchase.
 	========================
 	*/
-	void StartPurchase( const char * const productIdentifier ) {
+	void StartPurchase( SKProduct * product ) {
 		if ( ![SKPaymentQueue canMakePayments] ) {
 			return;
 		}
 		
+        const char * productIdentifier = [product.productIdentifier UTF8String];
+        
 		if ( !CanPurchase( productIdentifier ) ) {
 			return;
 		}
 		
-		SetProductState( productIdentifier, PRODUCT_WAIT_FOR_PURCHASE );
-	
-		NSString * nsProductIdentifier = [NSString stringWithCString:productIdentifier
-											encoding:NSUTF8StringEncoding];
-		
-		SKPayment * payment = [SKPayment paymentWithProductIdentifier:nsProductIdentifier];
+		SetProductState( product.productIdentifier, PRODUCT_WAIT_FOR_PURCHASE );
+
+        SKPayment * payment = [SKPayment paymentWithProduct:product];
 		[[SKPaymentQueue defaultQueue] addPayment:payment];
 	}
 	
