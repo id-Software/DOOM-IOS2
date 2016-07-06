@@ -235,14 +235,14 @@ AudioStreamBasicDescription getStreamFormat( void ) {
 
 	AudioStreamBasicDescription streamFormat = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-    // The AudioUnitSampleType data type is the recommended type for sample data in audio
+    // The SInt32 data type is the recommended type for sample data in audio
     //    units. This obtains the byte size of the type for use in filling in the ASBD.
-    size_t bytesPerSample = sizeof (AudioUnitSampleType);
+    size_t bytesPerSample = sizeof (SInt32);
 
     // Fill the application audio format struct's fields to define a linear PCM, 
     //        stereo, noninterleaved stream at the hardware sample rate.
     streamFormat.mFormatID          = kAudioFormatLinearPCM;
-    streamFormat.mFormatFlags       = kAudioFormatFlagsAudioUnitCanonical;
+    streamFormat.mFormatFlags       = kAudioFormatFlagIsFloat | kAudioFormatFlagsNativeEndian | kAudioFormatFlagIsPacked | kAudioFormatFlagIsNonInterleaved;
     streamFormat.mBytesPerPacket    = bytesPerSample;
     streamFormat.mFramesPerPacket   = 1;
     streamFormat.mBytesPerFrame     = bytesPerSample;
@@ -473,13 +473,13 @@ static OSStatus inputRenderCallback (
 			inNumberFrames, ioData->mNumberBuffers,
 			audioBuffer->mDataByteSize, audioBuffer->mNumberChannels );
 	*/
-	AudioUnitSampleType * hardwareBufferLeft = (AudioUnitSampleType *) audioBufferLeft->mData;
-	AudioUnitSampleType * hardwareBufferRight = (AudioUnitSampleType *) audioBufferRight->mData;
+	SInt32 * hardwareBufferLeft = (SInt32 *) audioBufferLeft->mData;
+	SInt32 * hardwareBufferRight = (SInt32 *) audioBufferRight->mData;
 	
 	
 	// EAS_Render always produces BUFFER_SIZE_IN_MONO_SAMPLES frames per call. Currently, this
 	// is defined to 128. Let's fill up a 128 frame buffer, then do a conversion from EAS_PCM
-	// (which is signed 16-bit integer) to AudioUnitSampleType (which is 8.24 fixed-point with
+    // (which is signed 16-bit integer) to AudioUnitSampleType (which is 8.24 fixed-point with
 	// a range of -1 to +1).
 	//
 	// Note that EAS renders interleaved stereo, so we actually a buffer size of

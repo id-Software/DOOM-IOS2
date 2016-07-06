@@ -52,6 +52,8 @@ the application can get the price information and actually initiate purchases of
 #include <string>
 #include <tr1/functional>
 
+@class SKProduct;
+
 namespace idInAppStore {
 	
 	void Initialize( const std::vector<std::string> & productIdentifiers );
@@ -70,8 +72,8 @@ namespace idInAppStore {
 	
 	std::string GetLocalizedPrice( const char * const productIdentifier );
 	
-	void StartPurchase( const char * const productIdentifier );
-	
+    void StartPurchase( SKProduct * product );
+    
 	/*
 	========================
 	The application can register callbacks to be notified of events that occur relating to
